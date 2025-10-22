@@ -10,7 +10,7 @@ What do you want?
 
 1= Install PiCap for USB Capturecards (cheap mjpeg ones)
 2= Install PiCap for CSI to HDMI bridge (tc358743)
-3= Install PiCap for EZ-Cap capturing raw mjpeg with mp2 audio on a pi1 or zero
+3= Install PiCap for EZ-Cap capturing raw mjpeg with mp2 audio on a pi1 or zero (comming soon)
 4= Uninstall PiCap
 " userselect
 
@@ -274,6 +274,16 @@ echo "00ffffffffffff005262888800888888
 fi
 fi
 
+if [ $userselect = 3 ]; then
+if [ -e /home/$USER/cap_usb.sh ]
+then
+echo "file cap_usb.sh already there, skipping"
+else
+#cat > /home/$USER/cap_usb.sh <<EOF
+echo "this will be added in the future"
+#EOF
+fi
+fi
 
 read -p "Do you want to autostart with bashrc? " test
 if [ $test = y ]; then
