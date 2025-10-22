@@ -386,7 +386,7 @@ else
 echo "An error happens :-("
 fi
 fi
-if [ $userselect = 3 ]; then
+if [ $userselect = 4 ]; then
 echo "Uninstall complete!"
 else
 echo "All done! Have fun with PiCap!"
