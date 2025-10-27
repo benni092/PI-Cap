@@ -1,0 +1,1 @@
+console=serial0,115200 cma=256M console=tty1 root=PARTUUID=19a0d8e7-02 rootfstype=ext4 fsck.repair=yes rootwait
