@@ -1,0 +1,6 @@
+proc            /proc           proc    defaults          0       0
+PARTUUID=19a0d8e7-01  /boot           vfat    defaults          0       2
+PARTUUID=19a0d8e7-02  /               ext4    defaults,noatime  0       1
+/dev/sda1 /home/pi/cap exfat defaults,nofail,auto,umask=000,users,rw 0 0
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
