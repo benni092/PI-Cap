@@ -8,3 +8,4 @@ Open /home/pi/cap_usb.sh in a editor and find the line that contains gst-launch.
 On the pi you can stop the script pressing strg+c and then type nano cap_usb.sh. Change the line and then press strg+x and y to save.
 
 Feel free to change the bitrate too. I set it to 5mb/s but if you have a fast usb drive you can set it to 10mb/s or more.
+To do this change target-bitrate=5000000 to 10000000
