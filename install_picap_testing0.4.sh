@@ -385,11 +385,6 @@ then
 /home/\$USER/cap_csi_live.sh
 fi
 EOF
-fi
-fi
-if [ $userselect = 3 ]; then
-mkdir /home/$USER/.config/autostart
-cp /home/$USER/.local/share/applications/Pi-Cap-live.desktop /home/$USER/.config/autostart/
 else
 cp /home/$USER/.bashrc /home/$USER/.bashrc.bak
 
@@ -405,9 +400,11 @@ fi
 EOF
 fi
 fi
+if [ $userselect = 3 ]; then
+mkdir /home/$USER/.config/autostart
+cp /home/$USER/.local/share/applications/Pi-Cap-live.desktop /home/$USER/.config/autostart/
 fi
 fi
-
 if [ $userselect = 1 ]; then
 read -p "Do you want some entrys for gpio-key,gpio-shutdown in config.txt? " test4
 if [ $test4 = y ]; then
